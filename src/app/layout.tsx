@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Brick Software — Enterprise Technology Solutions",
   description:
     "Custom software development, dedicated infrastructure & hosting, and game development. Purpose-built technology for businesses that cannot afford downtime.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
