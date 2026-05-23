@@ -27,7 +27,7 @@ const steps = [
   {
     num: "06",
     title: "Ongoing Support",
-    desc: "Retainer and SLA agreements available for teams that need a standing technical partner — from minor updates to full infrastructure management.",
+    desc: "Retainer and SLA agreements available for teams that need a standing technical partner: from minor updates to full infrastructure management.",
   },
 ];
 

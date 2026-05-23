@@ -31,7 +31,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <span className="logo-mark block w-5 h-5 bg-accent shrink-0" />
+            <img src="/logo.png" alt="Brick Software" className="w-6 h-6 object-contain shrink-0" />
             <span className="text-[12px] font-bold tracking-[0.16em] text-white">
               BRICK SOFTWARE
             </span>

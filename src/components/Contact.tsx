@@ -3,9 +3,10 @@
 import { useState, FormEvent } from "react";
 
 const contactDetails = [
-  { label: "General Inquiries", value: "hello@bricksoftware.io" },
-  { label: "Infrastructure & Hosting", value: "infra@bricksoftware.io" },
-  { label: "Support Hotline", value: "+1 (800) 000-0000" },
+  { label: "General Inquiries", value: "hello@brick-software.net" },
+  { label: "Infrastructure & Hosting", value: "infra@brick-software.net" },
+  { label: "IT Support", value: "it@brick-software.net" },
+  { label: "Support Hotline", value: "+32 476 08 06 48" },
 ];
 
 export default function Contact() {
@@ -32,7 +33,7 @@ export default function Contact() {
             </h2>
             <p className="text-[15px] text-text-muted leading-[1.8] mb-9">
               Whether you have a detailed brief or just an idea, reach out.
-              An engineer — not a salesperson — will respond within one
+              An engineer, not a salesperson, will respond within one
               business day.
             </p>
             <div className="flex flex-col gap-5">

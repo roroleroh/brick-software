@@ -2,7 +2,7 @@ const services = [
   {
     index: "01",
     title: "Custom Software Development",
-    desc: "Off-the-shelf rarely fits. We design and build software around your specific workflows — from retail point-of-sale and cash register systems to full-featured accounting and ERP platforms, deployed on your timeline.",
+    desc: "Off-the-shelf rarely fits. We design and build software around your specific workflows: from retail point-of-sale and cash register systems to full-featured accounting and ERP platforms, deployed on your timeline.",
     items: [
       "Point-of-sale & cash register systems",
       "Accounting & invoicing platforms",
@@ -23,7 +23,7 @@ const services = [
   {
     index: "02",
     title: "Infrastructure & Hosting",
-    desc: "Own your stack. We provide dedicated server rentals, managed hosting environments, and network infrastructure — with engineers who respond to incidents, not ticket queues.",
+    desc: "Own your stack. We provide dedicated server rentals, managed hosting environments, and network infrastructure. Engineers who respond to incidents, not ticket queues.",
     items: [
       "Dedicated & co-located servers",
       "Managed web & application hosting",
@@ -46,7 +46,7 @@ const services = [
   {
     index: "03",
     title: "Game Development",
-    desc: "From concept to launch. Our game development team covers the full production pipeline — design, engineering, and deployment — for studios and independent publishers who need a reliable technical partner.",
+    desc: "From concept to launch. Our game development team covers the full production pipeline: design, engineering, and deployment, for studios and independent publishers who need a reliable technical partner.",
     items: [
       "PC, console & mobile titles",
       "Gameplay & engine programming",

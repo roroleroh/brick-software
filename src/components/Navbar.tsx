@@ -29,7 +29,7 @@ export default function Navbar() {
       <nav className="max-w-[1160px] mx-auto px-6 flex items-center justify-between h-[68px]">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-3">
-          <span className="logo-mark block w-7 h-7 bg-accent shrink-0" />
+          <img src="/logo.png" alt="Brick Software" className="w-8 h-8 object-contain shrink-0" />
           <span className="text-[13px] font-bold tracking-[0.16em] text-white">
             BRICK SOFTWARE
           </span>
