@@ -37,7 +37,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-[14px] text-white/40 max-w-[240px] leading-[1.6]">
-            Purpose-built technology for serious businesses.
+            We build the software your business runs on.
           </p>
         </div>
 
