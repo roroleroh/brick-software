@@ -7,20 +7,23 @@ const tiers = [
 ];
 
 const serverDots = [
-  { start: { lat: 40.71, lng: -74.01, label: "New York" },   end: { lat: 51.51, lng: -0.13, label: "London" } },
-  { start: { lat: 51.51, lng: -0.13, label: "London" },      end: { lat: 50.11, lng: 8.68, label: "Frankfurt" } },
-  { start: { lat: 50.11, lng: 8.68, label: "Frankfurt" },    end: { lat: 1.35, lng: 103.82, label: "Singapore" } },
-  { start: { lat: 1.35, lng: 103.82, label: "Singapore" },   end: { lat: 35.69, lng: 139.69, label: "Tokyo" } },
-  { start: { lat: 1.35, lng: 103.82, label: "Singapore" },   end: { lat: -33.87, lng: 151.21, label: "Sydney" } },
+  { start: { lat: 40.71, lng: -74.01, label: "New York" },    end: { lat: 51.51, lng: -0.13,   label: "London" } },
+  { start: { lat: 51.51, lng: -0.13,  label: "London" },      end: { lat: 50.11, lng: 8.68,    label: "Frankfurt" } },
+  { start: { lat: 50.11, lng: 8.68,   label: "Frankfurt" },   end: { lat: 41.01, lng: 28.97,   label: "Istanbul" } },
+  { start: { lat: 41.01, lng: 28.97,  label: "Istanbul" },    end: { lat: 55.75, lng: 37.62,   label: "Moscow" } },
+  { start: { lat: 50.11, lng: 8.68,   label: "Frankfurt" },   end: { lat: 19.08, lng: 72.88,   label: "Mumbai" } },
+  { start: { lat: 19.08, lng: 72.88,  label: "Mumbai" },      end: { lat: 1.35,  lng: 103.82,  label: "Singapore" } },
+  { start: { lat: 1.35,  lng: 103.82, label: "Singapore" },   end: { lat: 35.69, lng: 139.69,  label: "Tokyo" } },
+  { start: { lat: 1.35,  lng: 103.82, label: "Singapore" },   end: { lat: -33.87, lng: 151.21, label: "Sydney" } },
 ];
 
 export default function Infrastructure() {
   return (
-    <section id="infrastructure" className="bg-off-white py-24">
+    <section id="infrastructure" className="bg-off-white py-24 overflow-hidden">
       <div className="max-w-[1160px] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div>
+          <div className="relative z-10">
             <span className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-accent mb-4">
               Infrastructure
             </span>
@@ -63,9 +66,15 @@ export default function Infrastructure() {
             </a>
           </div>
 
-          {/* World map */}
-          <div className="hidden lg:flex flex-col gap-4">
-            <div className="bg-navy rounded-xl overflow-hidden shadow-[0_24px_64px_rgba(13,27,42,0.25)] border border-white/06 p-4">
+          {/* World map — bleeds right, fades left toward text */}
+          <div className="hidden lg:flex flex-col gap-4 relative">
+            <div
+              className="w-[140%] -mr-[20%]"
+              style={{
+                maskImage: "linear-gradient(to right, transparent 0%, white 28%, white 100%)",
+                WebkitMaskImage: "linear-gradient(to right, transparent 0%, white 28%, white 100%)",
+              }}
+            >
               <WorldMap dots={serverDots} lineColor="#1a6bff" />
             </div>
             <div className="flex items-center gap-2 text-[12px] font-semibold text-text-muted tracking-[0.04em]">
