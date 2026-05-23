@@ -21,7 +21,7 @@ export default function Infrastructure() {
   return (
     <section id="infrastructure" className="bg-off-white py-24 overflow-hidden">
       <div className="max-w-[1160px] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-16 items-center">
           {/* Text */}
           <div className="relative z-10">
             <span className="block text-[11px] font-semibold tracking-[0.14em] uppercase text-accent mb-4">
@@ -66,15 +66,9 @@ export default function Infrastructure() {
             </a>
           </div>
 
-          {/* World map — bleeds right, fades left toward text */}
-          <div className="hidden lg:flex flex-col gap-4 relative">
-            <div
-              className="w-[140%] -mr-[20%]"
-              style={{
-                maskImage: "linear-gradient(to right, transparent 0%, white 28%, white 100%)",
-                WebkitMaskImage: "linear-gradient(to right, transparent 0%, white 28%, white 100%)",
-              }}
-            >
+          {/* World map */}
+          <div className="hidden lg:flex flex-col items-center gap-4">
+            <div className="w-full bg-navy rounded-xl overflow-hidden shadow-[0_24px_64px_rgba(13,27,42,0.2)] p-6">
               <WorldMap dots={serverDots} lineColor="#1a6bff" />
             </div>
             <div className="flex items-center gap-2 text-[12px] font-semibold text-text-muted tracking-[0.04em]">
