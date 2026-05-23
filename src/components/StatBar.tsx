@@ -1,7 +1,7 @@
 const stats = [
   { number: "200+", label: "Projects Delivered" },
   { number: "99.9%", label: "Infrastructure Uptime" },
-  { number: "15+", label: "Industries Served" },
+  { number: "5+", label: "Industries Served" },
   { number: "4yr", label: "In Operation" },
 ];
 
